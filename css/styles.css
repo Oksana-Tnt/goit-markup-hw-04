@@ -47,6 +47,18 @@ img {
     max-width: 100%;
     height: auto;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 /**
   |============================
   | Buttons
@@ -98,10 +110,7 @@ img {
     border: 1px solid transparent;
 }
 .header{
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid var(--color-cornflower);
-    
+    border-bottom: 1px solid var(--color-cornflower);    
 }
 /**
   |============================
@@ -109,9 +118,9 @@ img {
   |============================
 */
 .logo {
-    display: inline-block;
-    text-align: center;
-    
+    display: block;
+    padding: 24px 0;
+      
     color: var(--color-iris);
     font-family: Raleway, sans-serif;
     font-weight: 800;
@@ -153,6 +162,7 @@ img {
     align-items: center
 }
 .header-brand {
+    
     color: var(--color-navy-blue);
 }
 
@@ -202,6 +212,9 @@ img {
 }
 
 .adress-list .contact{
+    display: block;
+    padding: 24px 0;
+
     color: var(--color-slate);    
     font-size: 16px;
     line-height: 1.5;
@@ -219,10 +232,24 @@ img {
   |============================
 */
 .hero {
+    max-width: 1440px;
+    min-height: 600px;
     padding-top: 188px;
     padding-bottom: 188px;
-    background-color: var(--color-navy-blue);
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: var(--color-iris);
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+    ), 
+    url(../images/main-page/people-office\ 1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
 }
 .hero-title{
     margin:0 auto 48px;
@@ -261,7 +288,29 @@ img {
     display: flex;
     gap: 24px;
 }
+.features-list .item::before{
+    content: "";
+    display: block;
+    height: 112px;
+    margin-bottom: 8px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--color-cloud);
 
+}
+.icon-strategy::before{
+    background-image: url(../images/main-page/icon-strategy.png);
+}
+.icon-punctuality::before{
+    background-image: url(../images/main-page/icon-puntuality.png);
+}
+.icon-diligence::before{
+    background-image: url(../images/main-page/icon-diligence.png);
+}
+.icon-technologies::before{
+    background-image: url(../images/main-page/icon-technologies.png);
+}
 .features-list .item {
     flex-basis:calc((100%-72px)/4);
      
