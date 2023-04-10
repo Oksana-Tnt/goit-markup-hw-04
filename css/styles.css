@@ -388,9 +388,8 @@ h1,h2,h3,h4,h5,h6,p {
 .list-customers{
     --items: 6;
 }
-.icon-customers{
- color: currentColor;
-
+.icon-customers {
+ fill: currentColor;
 }
 .customer-card{
     height: 88px;
