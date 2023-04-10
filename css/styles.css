@@ -371,10 +371,10 @@ h1,h2,h3,h4,h5,h6,p {
     border-radius: 4px;
 
     color: var(--color-icon);
-   
 }
-.link-customers:hover,
-.link-customers:focus {
+
+.link-customers :hover,
+.link-customers :focus {
     border-color: var(--color-ocean);
     color: var(--color-ocean);
 }
@@ -394,6 +394,8 @@ h1,h2,h3,h4,h5,h6,p {
 .customer-card{
     height: 88px;
 }
+
+
 /**
   |============================
   | Footer
