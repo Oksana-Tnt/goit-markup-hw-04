@@ -415,8 +415,8 @@ h1,h2,h3,h4,h5,h6,p {
     margin-bottom: 8px;
 }
 
-.social-icon:hover,
-.social-icon:focus {
+.social-icon-team:hover,
+.social-icon-team:focus {
     background-color: var(--color-ocean);
 }
 
