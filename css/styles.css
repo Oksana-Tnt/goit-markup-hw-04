@@ -369,7 +369,7 @@ h1,h2,h3,h4,h5,h6,p {
     height: 100%;
     border: 1px solid var(--color-light-slate);    
     border-radius: 4px;
-    fill: var(--color-icon);
+    color: var(--color-icon);
 }
 
 .link-customers:hover,
@@ -377,7 +377,7 @@ h1,h2,h3,h4,h5,h6,p {
     border-color: var(--color-ocean);
     stroke: var(--color-ocean);
     color: var(--color-ocean);
-    
+   
 }
 
 .icon-set{
