@@ -134,10 +134,8 @@ h1,h2,h3,h4,h5,h6,p {
     letter-spacing: 0.04em;
 
     color: var(--color-white);
-    background-color: var(--color-iris);
-
-    border: none
-    border-radius: 4px;
+    background-color: var(--color-iris);  
+    
     cursor: pointer;   
     
 }
@@ -147,6 +145,8 @@ h1,h2,h3,h4,h5,h6,p {
     height: 56px;
     padding: 16px 32px;
     margin: 0 auto;
+    border: none;
+    border-radius: 4px;
     
     color: var(--color-white);
     background-color: var(--color-iris);
